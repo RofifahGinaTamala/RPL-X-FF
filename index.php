@@ -1,93 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <title>FF RENTAL MOBIL MAKASSAR</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">   
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/jquery/jquery.min.js"></script>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FF Rent Car</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap" rel="stylesheet">
     <style>
         body {
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-    background: url(images/loginbg.jpg) no-repeat;
-    background-size: cover;
-}
-.login-box{
-    width: 280px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform:translate(-50%, -50%);
-    color: brown;
-}
-.login-box h1{
-    float:left;
-    font-size: 40px;
-    border-bottom:6px solid brown;
-    margin-bottom: 50px;
-    padding:13px 0;
-}
-.textbox{
-    width:100%;
-    overflow: hidden;
-    font-size: 40%;
-    padding: 8px 0;
-    margin: 8px 0;
-    border-bottom: 1px solid brown;
-}
-.textbox i{
-    width:26px;
-    float:left;
-    text-align:center;
-}
+            margin: 0;
+            font-family: 'Titan One', cursive;
+            background-color: #f8f8f8;
+        }
+        header {
+            background: black;
+            padding: 20px;
+        }
+        nav {   
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: auto;
 
-.textbox input{
-    border:none;
-    outline: none;
-    background: none;
-    color:aliceblue;
-    font-size: 18px;
-    width: 80%;
-    float:left;
-    margin: 0 10px;
-}
-.btn{
-    width: 100%;
-    background: none;
-    border: 2px solid brown;
-    color:aliceblue;
-    padding: 5px;
-    font-size:18px;
-    cursor:pointer;
-    margin:12px 0;
-}
+            color: white;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+        .hero {
+            background: linear-gradient(to bottom, #000, #444);
+            color: white;
+            text-align: left;
+            padding: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 400px;
+        }
+        .hero-text {
+            max-width: 500px;
+            font-family: 'Titan One', cursive;
+        }
+        .hero-text h2 {
+            font-size: 28px;
+            color: gold;
+        }
+        .hero-image img {
+            width: 150px;
+            margin: 10px;
+        }
     </style>
 </head>
-
 <body>
-<div class="login-box">
-<h1>Login</h1>
-
-<form action="ceklogin.php" method="POST">
-
-<div class="textbox">
-    <i class="fas fa-user"></i>
-    <input type="text" name="txtusername" class="form-control"
-    placeholder="Username" autofocus required>
-</div>
-
-<div class="textbox">
-    <i class="fas fa-lock"></i>
-    <input type="password" name="txtpassword" class="form-control"
-    placeholder="Password" required>
-</div>
-
-<button type="submit" name="kirim" class="btn btn-primary btn-block">Login</button>
-</div>
-</form>
-</body>
-
+    <header>
+        <nav>
+            <h1>FF RENT CAR</h1>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">LAYANAN</a></li>
+                <li><a href="#">GALLERY</a></li>
+                <li><a href="#">KONTAK</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="Titan One">
+        <div class="Titan One">
+            <p>Welcome to, <strong>FF RENT CAR</strong></p>
+            <h2>Layanan sewa mobil terbaik di Makassar!</h2>
+        </div>
+        <div class="hero-image">
+            <img src="car1.png" alt="Mobil 1">
+            <img src="car2.png" alt="Mobil 2">
+            <img src="car3.png" alt="Mobil 3">
+        </div>
+    </section>
 </body>
 </html>
+
